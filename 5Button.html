@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons in HTML</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+
+      button,
+      input[type="button"],
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button.primary,
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+      }
+      button.primary:hover,
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      button.secondary,
+      input[type="button"] {
+        background-color: #6c757d;
+        color: white;
+      }
+      button.secondary:hover,
+      input[type="button"]:hover {
+        background-color: #565e64;
+      }
+      button.danger,
+      input[type="reset"] {
+        background-color: #dc3545;
+        color: white;
+      }
+      button.danger:hover,
+      input[type="reset"]:hover {
+        background-color: #a71d2a;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Buttons In HTML</h2>
+
+    <button class="primary" type="button">Primary Button</button>
+    <button class="secondary" type="button">Secondary Button</button>
+    <button class="danger" type="button">Danger Button</button>
+
+    <br />
+
+    <input type="submit" value="Submit" />
+    <input type="button" value="Click Me" />
+    <input type="reset" value="Reset" />
+  </body>
 </html>
